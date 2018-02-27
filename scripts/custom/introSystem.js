@@ -42,7 +42,7 @@
         }
 
     });
-
+    // Need to change this to an Online event, so it'll reset the intros when stream is live automatically.
     $.bind('twitchOffline', function(event) {
 
         streamstatus = "offline";
@@ -68,16 +68,15 @@
         var sender = event.getSender();
         var tags = event.getTags();
 
+        // NEED TO ADD ONLINE CHECKS FOR ALL INTROS
+        
         // zeldarawwk INTRO
         if (sender.equalsIgnoreCase('zeldarawwk')) {
             if (zeldatriggerintro === false) {
                 zeldatriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Zeldarawwk_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('zeldarawwk\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
         // rhiow2 INTRO
@@ -86,10 +85,7 @@
                 rhiowtriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Rhiow_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('rhiow\'s intro has already triggered. Not firing.');
-            }
+            }  
         }
 
         // richii INTRO
@@ -98,10 +94,7 @@
                 richiitriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Richii_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('richii\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -111,10 +104,7 @@
                 judgetriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Judge_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('judge\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -124,10 +114,7 @@
                 gumbytriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Gumby_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('gumby\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -137,10 +124,7 @@
                 airbournetriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Airbourne_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('airbourne\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -150,10 +134,7 @@
                 shirotriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('ShiroJune_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('shirojune\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -163,10 +144,7 @@
                 gosailtriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('GoSailABoat_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('go_sail_a_boat\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -177,10 +155,7 @@
                 kevintriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('Kevin888829_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('kevin888829\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -191,10 +166,7 @@
                 shinytriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('ShinySpartan_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('shinyspartan92\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -205,10 +177,7 @@
                 kindledtriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('KindledHollow_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('kindledhollow\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
@@ -219,10 +188,7 @@
                 ezgflighttriggerintro = true;
                 $.consoleLn(sender + ' has spoken - Triggering audio hook!');
                 $.panelsocketserver.triggerAudioPanel('EZGFlight_Intro');
-            } else {
-                // Again just for testing
-                $.consoleLn('ezg_flight\'s intro has already triggered. Not firing.');
-            }
+            } 
         }
 
 
