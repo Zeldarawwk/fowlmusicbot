@@ -24,7 +24,7 @@
         var args = event.getArgs();
 
         // Just for testing purposes, while I work on automating it.
-        if (command.equalsIgnoreCase('resetintros') && sender.equalsIgnoreCase('zeldarawwk_testing')){
+        if (command.equalsIgnoreCase('resetintros') && sender.equalsIgnoreCase('zeldarawwk')){
             zeldatriggerintro = false;
             shirotriggerintro = false;
             gumbytriggerintro = false;
