@@ -42,8 +42,8 @@
         }
 
     });
-    // Need to change this to an Online event, so it'll reset the intros when stream is live automatically.
-    $.bind('twitchOffline', function(event) {
+    // Resets the intros when stream goes live
+    $.bind('twitchOnline', function(event) {
 
         streamstatus = "offline";
         zeldatriggerintro = false;
