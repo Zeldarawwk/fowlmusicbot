@@ -7,8 +7,6 @@
 		var arguments = event.getArguments();
 		var args = event.getArgs();
 	
-		// Alright, let's say you only want one argument. This is where you would use the `getArgs()` method.
-		// This command would work as the following. `!color [color argument]`
 		if (command.equalsIgnoreCase('so')) {
 
             var shoutoutHeader = '/me Make sure to follow this amazing person!!! ltcDerp ltcDerp ltcDerp ▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬ '
